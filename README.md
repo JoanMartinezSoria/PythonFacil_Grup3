@@ -3,6 +3,7 @@
 
 - **Joan Martinez Soria** [JoanMartinezSoria]
 - **Victor Noguera Leon** [VictorNoguera]
+- **Hanan Hssini**
 
 ## Resum del projecte
 
