@@ -2,6 +2,7 @@
 ## Participants del projecte
 
 - **Joan Martinez Soria** [JoanMartinezSoria]
+- **Victor Noguera Leon** [VictorNoguera]
 
 ## Resum del projecte
 
