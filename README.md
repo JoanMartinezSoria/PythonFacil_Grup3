@@ -4,7 +4,7 @@
 - **Joan Martinez Soria** [JoanMartinezSoria]
 - **Victor Noguera Leon** [VictorNoguera]
 - **Hanan Hssini**
-
+- **Carla Domingo**
 ## Resum del projecte
 
 La UPC està interessada en desenvolupar un sistema de restauració innovador que integri
