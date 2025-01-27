@@ -2,6 +2,7 @@
 ## Participants del projecte
 
 - **Joan Martinez Soria** [JoanMartinezSoria]
+- **Hanan Hssini**
 
 ## Resum del projecte
 
