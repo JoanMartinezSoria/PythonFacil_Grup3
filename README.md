@@ -6,6 +6,7 @@
 - **Hanan Hssini**
 - **Carla Domingo**
 - **Hugo Castro Valcarcel** [Kstro18]
+**Prueba 1**
 ## Resum del projecte
 
 La UPC està interessada en desenvolupar un sistema de restauració innovador que integri
