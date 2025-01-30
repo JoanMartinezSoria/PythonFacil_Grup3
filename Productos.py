@@ -51,7 +51,31 @@ def productos_caros(lista_productos):
   return {"Productos mas caros":[p["nombre"] for p in lista_productos if p.get("precio") > 6]}
   
   
+
+
+
+def actualizar_stock(lista_productos,producto_nombre, cantidad): #Actualiza el numero de productos en el stock
+  nuevalista = []
+  for producto in lista_productos:
+    if producto["nombre" ] == producto_nombre:
+      producto["stock"] = producto["stock"] - cantidad
+      nuevalista.append(producto)
+  return {f"Se ha modificado el stock del producto {producto_nombre}" : nuevalista}
+
+
+def eliminar_sin_stock(lista_productos):
+  sin_stock = list(filter(lambda p: p["stock"] > 0, lista_productos))
+  return {"Se han eliminado los productos sin stock, la nueva lista es:" : sin_stock}
+
+
+
+
+
 print(contar_categorias(Productos))
 print(productos_para_reposicion(Productos))
 print(mails_proveedores(Productos,"Verdures"))
 print(productos_caros(Productos))
+print(actualizar_stock(Productos, "Bistec", 20))
+print(actualizar_stock(Productos, "Mayonesa", 39))
+print(eliminar_sin_stock(Productos))
+
