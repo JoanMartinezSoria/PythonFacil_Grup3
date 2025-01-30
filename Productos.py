@@ -4,30 +4,35 @@ Productos = [
                   "categoria": "Carns",
                   "stock": 20,
                   "proveedor": ["antonio@ejemplo.com"]
+                  "precio": 5.3
                 },
                 {
                   "nombre":"Mayonesa",
                   "categoria": "Salses",
                   "stock": 40,
                   "proveedor": ["helmans@ejemplo.com"]
+                  "precio": 1.2 
                 },
                 {
                   "nombre":"Patates",
                   "categoria": "Verdures",
                   "stock": 8,
                   "proveedor": ["lays@ejemplo.com"]
+                  "precio": 2.1
                 },
                 {
                   "nombre":"Cabrales",
                   "categoria": "Formatges",
                   "stock": 10,
                   "proveedor": ["quesos@ejemplo.com"]
+                  "precio": 4.6
                 },
                 {
                   "nombre":"Llom",
                   "categoria": "Carns",
                   "stock": 50,
                   "proveedor": ["granjaperez@ejemplo.com"]
+                  "precio": 5
                 }
                 ]
 
