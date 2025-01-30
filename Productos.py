@@ -59,7 +59,7 @@ def actualizar_stock(lista_productos,producto_nombre, cantidad): #Actualiza el n
       producto["stock"] = producto["stock"] - cantidad
       nuevalista.append(producto)
     
-  return {f"Se ha modificado el stock del producto {producto_nombre}" : nuevalista}
+
 
 
 print(contar_categorias(Productos))
