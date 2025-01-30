@@ -4,21 +4,19 @@ Productos = [
                   "categoria": "Carns",
                   "stock": 20,
                   "proveedor": ["antonio@ejemplo.com"],
-                  "precio": 15
+                  "precio": 5.3
                 },
                 {
                   "nombre":"Mayonesa",
                   "categoria": "Salses",
                   "stock": 40,
-                  "proveedor": ["helmans@ejemplo.com"],
-                  "precio": 6
+                  "proveedor": ["helmans@ejemplo.com"]
                 },
                 {
                   "nombre":"Patates",
                   "categoria": "Verdures",
                   "stock": 8,
-                  "proveedor": ["lays@ejemplo.com"],
-                  "precio": 5
+                  "proveedor": ["lays@ejemplo.com"]
                 },
                 {
                   "nombre":"Cabrales",
@@ -53,7 +51,7 @@ def productos_caros(lista_productos):
   return {"Productos mas caros":[p["nombre"] for p in lista_productos if p.get("precio") > 6]}
   
   
-#print(contar_categorias(Productos))
+print(contar_categorias(Productos))
 print(productos_para_reposicion(Productos))
-#print(mails_proveedores(Productos,"Verdures"))
+print(mails_proveedores(Productos,"Verdures"))
 print(productos_caros(Productos))

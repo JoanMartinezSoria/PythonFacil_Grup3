@@ -51,7 +51,17 @@ def mails_menores_35(lista_usuarios): #Devuelve los mails de los usuarios a los 
   mails = [u["mail"][0] for u in lista_usuarios if u.get("Edad",0)<35]
   return {"Emails para carga de trabajo": mails}
 
+def numero_usuarios(lista_usuarios): #Devuelve el numero de usuarios registrados
+  usuarios = sum(1 for a in lista_usuarios)
+  return {"Numero de usuarios registrados" : usuarios}
+
+
+def correo(lista_usuarios,x): #Devuelve el correo de un usuario
+  correo = list(Usuarios[x]["mail"])
+  return {f"El mail del usuario {x} es": correo}
 
 print(contar_generos(Usuarios))
 print(usuarios_aptos_para_socios(Usuarios))
 print(mails_menores_35(Usuarios))
+print(numero_usuarios(Usuarios))
+print(correo(Usuarios,3))
