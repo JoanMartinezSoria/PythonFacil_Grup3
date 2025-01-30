@@ -4,19 +4,21 @@ Productos = [
                   "categoria": "Carns",
                   "stock": 20,
                   "proveedor": ["antonio@ejemplo.com"],
-                  "precio": 5.3
+                  "precio": 15
                 },
                 {
                   "nombre":"Mayonesa",
                   "categoria": "Salses",
                   "stock": 40,
-                  "proveedor": ["helmans@ejemplo.com"]
+                  "proveedor": ["helmans@ejemplo.com"],
+                  "precio": 6
                 },
                 {
                   "nombre":"Patates",
                   "categoria": "Verdures",
                   "stock": 8,
-                  "proveedor": ["lays@ejemplo.com"]
+                  "proveedor": ["lays@ejemplo.com"],
+                  "precio": 4
                 },
                 {
                   "nombre":"Cabrales",
@@ -50,25 +52,14 @@ def mails_proveedores(lista_productos,clase): #Devuelve los mails de los proveed
 def productos_caros(lista_productos):
   return {"Productos mas caros":[p["nombre"] for p in lista_productos if p.get("precio") > 6]}
   
-  
-
-
-
 def actualizar_stock(lista_productos,producto_nombre, cantidad): #Actualiza el numero de productos en el stock
   nuevalista = []
   for producto in lista_productos:
     if producto["nombre" ] == producto_nombre:
       producto["stock"] = producto["stock"] - cantidad
       nuevalista.append(producto)
+    
   return {f"Se ha modificado el stock del producto {producto_nombre}" : nuevalista}
-
-
-def eliminar_sin_stock(lista_productos):
-  sin_stock = list(filter(lambda p: p["stock"] > 0, lista_productos))
-  return {"Se han eliminado los productos sin stock, la nueva lista es:" : sin_stock}
-
-
-
 
 
 print(contar_categorias(Productos))
@@ -76,6 +67,5 @@ print(productos_para_reposicion(Productos))
 print(mails_proveedores(Productos,"Verdures"))
 print(productos_caros(Productos))
 print(actualizar_stock(Productos, "Bistec", 20))
-print(actualizar_stock(Productos, "Mayonesa", 39))
-print(eliminar_sin_stock(Productos))
+
 
