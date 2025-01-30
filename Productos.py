@@ -4,30 +4,35 @@ Productos = [
                   "categoria": "Carns",
                   "stock": 20,
                   "proveedor": ["antonio@ejemplo.com"]
+                  "precio": 5.3
                 },
                 {
                   "nombre":"Mayonesa",
                   "categoria": "Salses",
                   "stock": 40,
                   "proveedor": ["helmans@ejemplo.com"]
+                  "precio": 1.2 
                 },
                 {
                   "nombre":"Patates",
                   "categoria": "Verdures",
                   "stock": 8,
                   "proveedor": ["lays@ejemplo.com"]
+                  "precio": 2.1
                 },
                 {
                   "nombre":"Cabrales",
                   "categoria": "Formatges",
                   "stock": 10,
                   "proveedor": ["quesos@ejemplo.com"]
+                  "precio": 4.6
                 },
                 {
                   "nombre":"Llom",
                   "categoria": "Carns",
                   "stock": 50,
                   "proveedor": ["granjaperez@ejemplo.com"]
+                  "precio": 5
                 }
                 ]
 
@@ -45,22 +50,6 @@ def mails_proveedores_electronicos(lista_productos): #Devuelve los mails de los 
   return{"Proveedores Carns":[p["proveedor"] for p in lista_productos if p.get("categoria") == "Carns"]}
 
 
-
-
-
-
-
-def actualizar_stock(lista_productos,x): #Actualiza el numero de productos en el stock
-  stock = list(map(lambda p: (p["nombre"], p["categoria"], p["stock"] - 5, p["proveedor"]), Productos))
-  return {f"Se ha reducido el stock {x} unidades"}
-
-
-
 print(contar_categorias(Productos))
 print(productos_para_reposicion(Productos))
 print(mails_proveedores_electronicos(Productos))
-
-
-
-print(actualizar_stock(Productos,5))
-print(stock)
