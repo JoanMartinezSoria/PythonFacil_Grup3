@@ -1,6 +1,6 @@
 Productos = [
                 {
-                  "nombre":"Vistec",
+                  "nombre":"Bistec",
                   "categoria": "Carns",
                   "stock": 20,
                   "proveedor": ["antonio@ejemplo.com"]
@@ -9,25 +9,25 @@ Productos = [
                   "nombre":"Mayonesa",
                   "categoria": "Salses",
                   "stock": 40,
-                  "proveedor": ["empresa1@ejemplo.com"]
+                  "proveedor": ["helmans@ejemplo.com"]
                 },
                 {
                   "nombre":"Patates",
                   "categoria": "Verdures",
                   "stock": 8,
-                  "proveedor": ["empresa2@ejemplo.com"]
+                  "proveedor": ["lays@ejemplo.com"]
                 },
                 {
                   "nombre":"Cabrales",
                   "categoria": "Formatges",
                   "stock": 10,
-                  "proveedor": ["empresa3@ejemplo.com"]
+                  "proveedor": ["quesos@ejemplo.com"]
                 },
                 {
                   "nombre":"Llom",
                   "categoria": "Carns",
                   "stock": 50,
-                  "proveedor": ["empresa4@ejemplo.com"]
+                  "proveedor": ["granjaperez@ejemplo.com"]
                 }
                 ]
 
