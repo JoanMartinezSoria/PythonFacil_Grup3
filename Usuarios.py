@@ -31,7 +31,7 @@ Usuarios = [
                 },
                 {
                     "nombre":"Faustino",
-                    "carga": 85,
+                    "Edad": 85,
                     "Sexo": "M",
                     "mail": ["faustino@ejemplo.com"]
                 }
