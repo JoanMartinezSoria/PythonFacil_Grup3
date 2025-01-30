@@ -48,19 +48,27 @@ def mails_proveedores_electronicos(lista_productos): #Devuelve los mails de los 
 
 
 
+def actualizar_stock(lista_productos,producto_nombre, cantidad): #Actualiza el numero de productos en el stock
+  nuevalista = []
+  for producto in lista_productos:
+    if producto["nombre" ] == producto_nombre:
+      producto["stock"] = producto["stock"] - cantidad
+      nuevalista.append(producto)
+  return {f"Se ha modificado el stock del producto {producto_nombre}" : nuevalista}
 
 
-def actualizar_stock(lista_productos,x): #Actualiza el numero de productos en el stock
-  stock = list(map(lambda p: (p["nombre"], p["categoria"], p["stock"] - 5, p["proveedor"]), Productos))
-  return {f"Se ha reducido el stock {x} unidades"}
+def eliminar_sin_stock(lista_productos):
+  sin_stock = list(filter(lambda p: p["stock"] > 0, lista_productos))
+  return {"Se han eliminado los productos sin stock, la nueva lista es:" : sin_stock}
+
+
 
 
 
 print(contar_categorias(Productos))
 print(productos_para_reposicion(Productos))
 print(mails_proveedores_electronicos(Productos))
+print(actualizar_stock(Productos, "Bistec", 20))
+print(actualizar_stock(Productos, "Mayonesa", 39))
+print(eliminar_sin_stock(Productos))
 
-
-
-print(actualizar_stock(Productos,5))
-print(stock)
