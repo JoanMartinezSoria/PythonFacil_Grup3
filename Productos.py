@@ -49,7 +49,7 @@ def productos_para_reposicion(lista_productos): #Mira cuales son los productos q
 def mails_proveedores(lista_productos,clase): #Devuelve los mails de los proveedores de la categoria electronica
   return{"Proveedores Carns":[p["proveedor"] for p in lista_productos if p.get("categoria") == clase]}
 
-def productos_caros(lista_productos):
+def productos_caros(lista_productos): #Devuelve los productos mas caros 
   return {"Productos mas caros":[p["nombre"] for p in lista_productos if p.get("precio") > 6]}
   
 def actualizar_stock(lista_productos,producto_nombre, cantidad): #Actualiza el numero de productos en el stock
